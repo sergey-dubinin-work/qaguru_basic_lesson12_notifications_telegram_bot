@@ -1,0 +1,21 @@
+{
+  "base": {
+    "logo": "notifications/report_logo.png",
+    "project": "Test report",
+    "environment": "Local",
+    "comment": "MyComment",
+    "reportLink": "",
+    "language": "ru",
+    "allureFolder": "build/reports/allure-report/allureReport",
+    "enableChart": true,
+    "enableSuitesPublishing": false,
+    "customData": {}
+  },
+  "telegram": {
+    "token": "token",
+    "chat": "-12345",
+    "topic": "",
+    "replyTo": "",
+    "templatePath": "/templates/telegram.ftl"
+  }
+}
