@@ -1,12 +1,8 @@
 Для локального запуска:
-java "-DconfigFile=notifications/telegram_config.json" -jar notifications/allure-notifications-4.9.0.jar
+java "-DconfigFile=notifications/telegram_config_local.json" -jar notifications/allure-notifications-4.9.0.jar
 
 
 Для Jenkins:
 java \
--"-DprojectName=${PROJECT_NAME}" \
--"-Denv=${ENVIRONMENT}" \
--"-Dreport_link=${BUILD_URL}" \
--"-Dcomm=My comment" \
--"-DconfigFile=${PATH_TO_FILE}" \
--jar notifications/allure-notifications-4.9.0.jar
+"-DconfigFile=./notifications/telegram_config.json" \
+-jar ./notifications/allure-notifications-4.9.0.jar

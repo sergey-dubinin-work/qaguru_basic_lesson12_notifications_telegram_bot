@@ -1,12 +1,12 @@
 {
   "base": {
     "logo": "notifications/report_logo.png",
-    "project": "${JOB_NAME}",
-    "environment": "${ENVIRONMENT}",
-    "comment": "${COMMENT}",
-    "reportLink": "${BUILD_URL}",
+    "project": "Test report",
+    "environment": "Local",
+    "comment": "MyComment",
+    "reportLink": "",
     "language": "ru",
-    "allureFolder": "allure-report",
+    "allureFolder": "build/reports/allure-report/allureReport",
     "enableChart": true,
     "enableSuitesPublishing": false,
     "customData": {}
