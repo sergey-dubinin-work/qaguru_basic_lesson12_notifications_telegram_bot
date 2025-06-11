@@ -16,7 +16,7 @@ public enum Browser {
         }
 
         @Override
-        public void setupBrowserOptions() {
+        public void setupBrowserSelenoidOptions() {
             ChromeOptions options = new ChromeOptions();
             options.setCapability("selenoid:options", selenoidOptions());
             Configuration.browserCapabilities.setCapability(ChromeOptions.CAPABILITY, options);
@@ -30,7 +30,7 @@ public enum Browser {
         }
 
         @Override
-        public void setupBrowserOptions() {
+        public void setupBrowserSelenoidOptions() {
             FirefoxOptions options = new FirefoxOptions();
             options.setCapability("selenoid:options", selenoidOptions());
             Configuration.browserCapabilities.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options);
@@ -43,7 +43,7 @@ public enum Browser {
 
     public abstract void setupBrowserManager();
 
-    public abstract void setupBrowserOptions();
+    public abstract void setupBrowserSelenoidOptions();
 
     private static Map<String, Object> selenoidOptions(){
         return Map.of(

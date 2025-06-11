@@ -19,11 +19,11 @@ public class DriverSettings {
                     getSelenoidConfig().selenoidUrl(),
                     getSelenoidConfig().selenoidPort()
             );
+
+            browser.setupBrowserSelenoidOptions();
         } else {
            browser.setupBrowserManager();
         }
-
-        browser.setupBrowserOptions();
 
     }
 
